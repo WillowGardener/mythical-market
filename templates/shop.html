@@ -5,12 +5,17 @@
 {% block content %}
     
     <div id='store-page'>
-        <h2>SPEND</h2>
+        <h2>Mythical Marketplace</h2>
+        <h2>The products are Imaginary-- your money is real</h2>
         <div id='product-list'>
             {% for product in products %}
-                <div>
-                <img class='main-product-image' src="{{ product.main_image.url }}">
-                </div>
+                <a class="product-container">
+                    <img class='main-product-image' src="{{ product.main_image.url }}">
+                    <div class="product-info">
+                        <div class="product-title">{{product.title}}</div>
+                        <div class="product-price">${{product.price|floatformat:2}}</div>
+                    </div>
+                </a>
             {% endfor %}
         </div>
     </div>
