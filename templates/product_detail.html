@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %} -- {{ product.title }}{% endblock %}
+
+{% block content %}
+
+<div class="product-container">
+    <img class="main-product-image" src="{{product.main_image.url}}">
+    <div class="product-description">
+        {{product.description}}
+        <br>
+        ${{ product.price |floatformat:2 }}
+        <button class="buy-button">Buy Now!</button>
+    </div>
+</div>
+
+{% endblock %}
