@@ -13,7 +13,11 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 from pathlib import Path
 import os
 
-from .secrets import super_secret
+from .secrets import super_secret,stripe_public_key,stripe_test_key,stripe_secret_key
+
+
+
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent

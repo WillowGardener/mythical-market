@@ -102,12 +102,12 @@ h2, h3 {
     margin: 20px;
 }
 
-.buy-button {
+.checkout-button {
     background-color: white;
     border: 3px solid rgb(32,20,41);
     
 }
 
-.buy-button:hover {
+.checkout-button:hover {
     cursor: pointer;
 }

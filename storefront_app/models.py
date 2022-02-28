@@ -16,6 +16,9 @@ class Product(models.Model):
     def __str__(self):
         return self.title
 
+    def get_display_price(self):
+        return "{0:.2f}".format(self.price/100)
+
 class ProductImage(models.Model):
     image = models.ImageField(upload_to='images',blank=True)
     alt_text = models.CharField(max_length=100, blank=True)

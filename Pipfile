@@ -9,6 +9,7 @@ verify_ssl = true
 django = "*"
 djangorestframework = "*"
 pillow = "*"
+stripe = "*"
 
 [requires]
 python_version = "3.9"
